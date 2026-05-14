@@ -15,9 +15,10 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: serif;
     background: var(--cor-fundo);
 }
+
 
 .img-logo {
     max-width: 89px;
@@ -37,18 +38,20 @@ body {
 
 .navbar-inner {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 
 .navbar-inner a {
     color: var(--cor-texto-nav);
+    background-color: var(--cor-btn-nav);
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 10px 45px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+
 }
 
 .navbar-inner a:hover {
@@ -57,7 +60,7 @@ body {
 
 .navbar-links {
     display: flex;
-    gap: 10px;
+    gap: 50px;
     list-style: none;
 }
 
@@ -66,24 +69,26 @@ main {
     flex-direction: row;
     align-items: flex-start;
     padding: 20px;
-    margin-top: 120px;
+    margin-top: 170px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-    gap: 40px;
+    
 }
 
-.esquerda {
+.livro-autor {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 5px;
 }
 
-.centro {
+.apresentacao-livro {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
+    gap: 70px;
 }
 
 .img-livro {
@@ -96,17 +101,46 @@ main {
     color: var(--cor-texto-jeff);
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
     margin-top: 10px;
 }
 
 h1 {
-    margin-bottom: 10px;
-    font-size: 36px;
+    font-size: 70px;
     color: var(--cor-preto);
-    margin-top: 0;
 }
 
-h2, h3 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+h2 {
+    font-size: 50px;
+    color: var(--cor-preto);
 }
+
+h3{
+    font-size: 36px;
+    color: var(--cor-preto);
+}
+
+.btn-comprar {
+    background-color: var(--cor-carrinho);
+    border: none;
+    padding: 60px;
+    font-size: 19px;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: var(--cor-hover);
+    padding: 66px;
+    cursor: pointer;
+}
+
+.texto {
+    font-size: 25px;
+    color: var(--cor-preto);
+    font-weight: bolder;
+}
+
+.icone{
+    font-size: 50px;
+}
+
